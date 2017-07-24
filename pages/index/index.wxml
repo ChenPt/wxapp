@@ -8,4 +8,13 @@
     <view class="clear">
         <button bindtap="clear">清空任务状态</button>
     </view>
+    <view>
+        <image src="../../images/1.png" wx:if="{{ isSpeaking }}"></image>
+    </view>
+    <view bindtouchend="recordEnd" bindtouchstart="record">
+        <button>录音</button>
+    </view>
+    <view bindtap="playVoice">
+        <button >播放</button>
+    </view>
 </view>
